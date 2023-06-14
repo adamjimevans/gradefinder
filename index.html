@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+    function gradeFinder1(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.56)
+        grade = 55;
+      else if (score/total >= 0.51)
+        grade = 54;
+      else if (score/total >= 0.46)
+        grade = 44;
+      else if (score/total >= 0.39)
+        grade = 43;
+      else if (score/total >= 0.33)
+        grade = 33;
+      else if (score/total >= 0.27)
+        grade = 32;
+      else if (score/total >= 0.21)
+        grade = 22;
+      else if (score/total >= 0.14)
+        grade = 21;
+      else if (score/total >= 0.08)
+        grade = 11;
+      
+        document.getElementById('result1').innerHTML = "Grade: " + grade;
+    }
+    
+    function gradeFinder2(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.74)
+        grade = 99;
+      else if (score/total >= 0.69)
+        grade = 98;
+      else if (score/total >= 0.64)
+        grade = 88;
+      else if (score/total >= 0.60)
+        grade = 87;
+      else if (score/total >= 0.55)
+        grade = 77;
+      else if (score/total >= 0.50)
+        grade = 76;
+      else if (score/total >= 0.45)
+        grade = 66;
+      else if (score/total >= 0.40)
+        grade = 65;
+      else if (score/total >= 0.35)
+        grade = 55;
+      else if (score/total >= 0.30)
+        grade = 54;
+      else if (score/total >= 0.25)
+        grade = 44;
+      else if (score/total >= 0.23)
+        grade = 43;
+      
+        document.getElementById('result2').innerHTML = "Grade: " + grade;
+    }
+    
+    function gradeFinder3(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.78)
+        grade = 9;
+      else if (score/total >= 0.69)
+        grade = 8;
+      else if (score/total >= 0.61)
+        grade = 7;
+      else if (score/total >= 0.50)
+        grade = 6;
+      else if (score/total >= 0.39)
+        grade = 5;
+      else if (score/total >= 0.29)
+        grade = 4;
+      else if (score/total >= 0.23)
+        grade = 3;
+      
+        document.getElementById('result3').innerHTML = "Grade: " + grade;
+    }
+    
+    function gradeFinder4(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.62)
+        grade = 5;
+      else if (score/total >= 0.52)
+        grade = 4;
+      else if (score/total >= 0.38)
+        grade = 3;
+      else if (score/total >= 0.23)
+        grade = 2;
+      else if (score/total >= 0.09)
+        grade = 1;
+      
+        document.getElementById('result4').innerHTML = "Grade: " + grade;
+    }
+    
+    function gradeFinder5(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.83)
+        grade = 9;
+      else if (score/total >= 0.74)
+        grade = 8;
+      else if (score/total >= 0.65)
+        grade = 7;
+      else if (score/total >= 0.54)
+        grade = 6;
+      else if (score/total >= 0.43)
+        grade = 5;
+      else if (score/total >= 0.32)
+        grade = 4;
+      else if (score/total >= 0.26)
+        grade = 3;
+      
+        document.getElementById('result5').innerHTML = "Grade: " + grade;
+    }
+    
+    function gradeFinder6(score, total) {
+      var grade = 0;
+      
+      if (score/total >= 0.73)
+        grade = 9;
+      else if (score/total >= 0.63)
+        grade = 8;
+      else if (score/total >= 0.53)
+        grade = 7;
+      else if (score/total >= 0.42)
+        grade = 6;
+      else if (score/total >= 0.31)
+        grade = 5;
+      else if (score/total >= 0.21)
+        grade = 4;
+      else if (score/total >= 0.15)
+        grade = 3;
+      
+        document.getElementById('result6').innerHTML = "Grade: " + grade;
+    }
+  </script>
+</head>
+<body>
+  <h1>Edexcel Science Grade Finder</h1>
+  
+  <h2>Combined Science Foundation:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score1">
+  <input type="number" id="total1">
+  <button onclick="gradeFinder1(document.getElementById('score1').value, document.getElementById('total1').value)">Find Grade</button>
+  <div id="result1"></div>
+  
+  <h2>Combined Science Higher:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score2">
+  <input type="number" id="total2">
+  <button onclick="gradeFinder2(document.getElementById('score2').value, document.getElementById('total2').value)">Find Grade</button>
+  <div id="result2"></div>
+
+  <h2>Physics Higher:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score3">
+  <input type="number" id="total3">
+  <button onclick="gradeFinder3(document.getElementById('score3').value, document.getElementById('total3').value)">Find Grade</button>
+  <div id="result3"></div>
+
+  <h2>Physics Foundation:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score4">
+  <input type="number" id="total4">
+  <button onclick="gradeFinder4(document.getElementById('score4').value, document.getElementById('total4').value)">Find Grade</button>
+  <div id="result4"></div>
+
+  <h2>Biology Higher:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score5">
+  <input type="number" id="total5">
+  <button onclick="gradeFinder5(document.getElementById('score5').value, document.getElementById('total5').value)">Find Grade</button>
+  <div id="result5"></div>
+
+  <h2>Chemistry Higher:</h2>
+  <p>Enter the score and total:</p>
+  <input type="number" id="score6">
+  <input type="number" id="total6">
+  <button onclick="gradeFinder6(document.getElementById('score6').value, document.getElementById('total6').value)">Find Grade</button>
+  <div id="result6"></div>
+</body>
+</html>
